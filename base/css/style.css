@@ -808,7 +808,7 @@ footer .copylight.bg-gray2 {
 
 .logo {
   width: 175px;
-  height: 46px;
+  height: 34px;
   background: url(/base/images/logo.png) no-repeat 0 0;
   background-size: contain;
 }
@@ -820,6 +820,7 @@ footer .copylight.bg-gray2 {
 
 .greeting {
   color: #fff;
+  font-size: 14px;
 }
 
 .greeting em {
@@ -866,15 +867,15 @@ footer .copylight.bg-gray2 {
 
 .gnb li > a {
   font-weight: 800;
-  font-size: 18px;
+  font-size: 16px;
   color: #ECF0F1;
 }
 
 .gnb li > a::before {
   content: "";
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   margin-left: -10px;
   margin-right: 6px;
   vertical-align: bottom;
@@ -931,7 +932,7 @@ footer .copylight.bg-gray2 {
 .gnb .depth2 {
   display: none;
   position: absolute;
-  top: 46px;
+  top: 38px;
   left: 0;
   padding: 20px;
   background: #1c2f42;
@@ -939,7 +940,7 @@ footer .copylight.bg-gray2 {
 
 .gnb .depth2 a {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   color: #ECF0F1;
   white-space: nowrap;
 }
@@ -1181,6 +1182,7 @@ footer .copylight.bg-gray2 {
   padding: 13px 0;
   line-height: 16px;
   text-align: center;
+  letter-spacing: -1px;
   color: #fff;
   background: #b1b1b1;
 }
@@ -1656,111 +1658,6 @@ footer .copylight.bg-gray2 {
   background-size: contain;
 }
 
-.ic-wowpoint.gray {
-  width: 32px;
-  height: 32px;
-  vertical-align: middle;
-  background: url(/base/images/traffic_lights_icon/ic_wowpoint_gray.png) no-repeat 0 0;
-  background-size: contain;
-}
-
-.ic-wowpoint.yellow {
-  width: 32px;
-  height: 32px;
-  vertical-align: middle;
-  background: url(/base/images/traffic_lights_icon/ic_wowpoint_yellow.png) no-repeat 0 0;
-  background-size: contain;
-}
-
-.ic-state-circle {
-  width: 32px;
-  height: 32px;
-  border-radius: 100%;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 18px;
-}
-
-.ic-state-circle.front {
-  background-image: url(/base/images/traffic_lights_icon/ic_car_front.png);
-}
-
-.ic-state-circle.side {
-  background-image: url(/base/images/traffic_lights_icon/ic_car_side.png);
-}
-
-.ic-state-circle.stand {
-  background-image: url(/base/images/traffic_lights_icon/ic_man_stand.png);
-}
-
-.ic-state-circle.walk {
-  background-image: url(/base/images/traffic_lights_icon/ic_man_walk.png);
-}
-
-.ic-state-circle.front-gray {
-  background-image: url(/base/images/traffic_lights_icon/ic_car_front_gray.png);
-}
-
-.ic-state-circle.side-gray {
-  background-image: url(/base/images/traffic_lights_icon/ic_car_side_gray.png);
-}
-
-.ic-state-circle.stand-gray {
-  background-image: url(/base/images/traffic_lights_icon/ic_man_stand_gray.png);
-}
-
-.ic-state-circle.walk-gray {
-  background-image: url(/base/images/traffic_lights_icon/ic_man_walk_gray.png);
-}
-
-.ic-state-circle.front-red {
-  background-image: url(/base/images/traffic_lights_icon/ic_car_front_red.png);
-}
-
-.ic-state-circle.side-red {
-  background-image: url(/base/images/traffic_lights_icon/ic_car_side_red.png);
-}
-
-.ic-state-circle.stand-red {
-  background-image: url(/base/images/traffic_lights_icon/ic_man_stand_red.png);
-}
-
-.ic-state-circle.walk-red {
-  background-image: url(/base/images/traffic_lights_icon/ic_man_walk_red.png);
-}
-
-.ic-state-circle.front-green {
-  background-image: url(/base/images/traffic_lights_icon/ic_car_front_green.png);
-}
-
-.ic-state-circle.side-green {
-  background-image: url(/base/images/traffic_lights_icon/ic_car_side_green.png);
-}
-
-.ic-state-circle.stand-green {
-  background-image: url(/base/images/traffic_lights_icon/ic_man_stand_green.png);
-}
-
-.ic-state-circle.walk-green {
-  background-image: url(/base/images/traffic_lights_icon/ic_man_walk_green.png);
-}
-
-.ic-state-circle.front-orange {
-  background-image: url(/base/images/traffic_lights_icon/ic_car_front_orange.png);
-}
-
-.ic-state-circle.side-orange {
-  background-image: url(/base/images/traffic_lights_icon/ic_car_side_orange.png);
-}
-
-.ic-state-circle.stand-orange {
-  background-image: url(/base/images/traffic_lights_icon/ic_man_stand_orange.png);
-}
-
-.ic-state-circle.walk-orange {
-  background-image: url(/base/images/traffic_lights_icon/ic_man_walk_orange.png);
-}
-
 /* ###############################
     form
 ################################## */
@@ -2097,17 +1994,22 @@ footer .copylight.bg-gray2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 14px 0;
 }
 
+.control-header .select-choice em {
+  margin: 0 10px;
+  color: #fff;
+}
+
 .control-header .selectbox {
-  margin-left: 13px;
+  width: 187px;
 }
 
 .control-header .selectbox:disabled {
@@ -2115,7 +2017,10 @@ footer .copylight.bg-gray2 {
 }
 
 .control-header .switch-group {
-  margin-left: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
 }
 
 .control-header .switch-group .txt {
@@ -2343,6 +2248,7 @@ footer .copylight.bg-gray2 {
 
 [data-componant="roi-vehicle"] .tbl-border-none.short td {
   height: auto;
+  border-bottom: 10px solid #fff;
 }
 
 [data-componant="roi-vehicle"] .tbl-border-none.short td .input-txt {
@@ -2351,7 +2257,7 @@ footer .copylight.bg-gray2 {
 }
 
 [data-componant="roi-infolist"] {
-  height: 390px;
+  height: 528px;
 }
 
 [data-componant="roi-infolist"] .unit-content {
@@ -2359,7 +2265,7 @@ footer .copylight.bg-gray2 {
 }
 
 [data-componant="roi-infolist-walker"] {
-  height: 390px;
+  height: 528px;
 }
 
 [data-componant="roi-infolist-walker"] .unit-content {
@@ -2962,57 +2868,44 @@ footer .copylight.bg-gray2 {
   padding-left: 12px;
 }
 
-.monitering > .ly-left .video-item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
-  margin-top: 12px;
+.monitering > .ly-left h2 {
+  line-height: 68px;
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
 }
 
-.monitering > .ly-left .video-item.active {
-  border-color: #ff1f00;
+.monitering > .ly-left .ly-left-list {
+  overflow-y: auto;
+  height: 793px;
+  background: #fff;
 }
 
-.monitering > .ly-left .video-item:hover {
-  cursor: pointer;
+.monitering > .ly-left .ly-left-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #c4c4c4;
 }
 
-.monitering > .ly-left .video-item.off {
-  border-color: #7e7e7e;
-}
-
-.monitering > .ly-left .video-item.off:hover {
-  cursor: default;
-}
-
-.monitering > .ly-left .video-item.off::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: url(/base/images/logo_white.png) no-repeat 50% 50% #7e7e7e;
-  background-size: 199px 53px;
-}
-
-.monitering > .ly-left .video-item.off2 {
-  border-color: #7e7e7e;
-}
-
-.monitering > .ly-left .video-item.off2:hover {
-  cursor: default;
-}
-
-.monitering > .ly-left .video-item.off2::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: url(/base/images/ic_none.png) no-repeat 50% 50% #7e7e7e;
-  background-size: 100px;
+.monitering > .ly-left .ly-left-list li button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 12px;
+  text-align: left;
+  color: #181616;
 }
 
 .monitering > .ly-center {
@@ -3023,7 +2916,7 @@ footer .copylight.bg-gray2 {
 }
 
 .monitering > .ly-center .video-item {
-  height: 781px;
+  height: 793px;
   border-width: 1px;
 }
 
@@ -3275,10 +3168,10 @@ footer .copylight.bg-gray2 {
   }
   /* roi 설정 > 우측 하단 리스트 */
   [data-componant="roi-infolist"] {
-    height: 392px;
+    height: 530px;
   }
   [data-componant="roi-infolist-walker"] {
-    height: 392px;
+    height: 530px;
   }
   /* 파일 업데이트 > 우측 하단 리스트 */
   [data-componant="file-update"] {
