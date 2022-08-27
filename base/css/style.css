@@ -2264,6 +2264,14 @@ footer .copylight.bg-gray2 {
   background: none;
 }
 
+[data-componant="roi-infolist-event"] {
+  height: 464px;
+}
+
+[data-componant="roi-infolist-event"] .unit-content {
+  background: none;
+}
+
 [data-componant="roi-infolist-walker"] {
   height: 528px;
 }
@@ -2968,9 +2976,56 @@ footer .copylight.bg-gray2 {
   margin-top: 10px;
 }
 
+.roi-vehicle.event > .short {
+  margin-top: 10px;
+}
+
+.roi-vehicle.event > .short td .select-choice {
+  display: block;
+}
+
+.roi-vehicle.event > .short td .select-choice .selectbox {
+  width: 100%;
+  height: 42px;
+}
+
+.roi-vehicle.event > .short td .btn-block {
+  width: 100%;
+  height: 149px;
+  border-left: 10px solid #fff;
+}
+
 .road-choice .radio-bordered .txt {
   line-height: 14px;
   font-size: 14px;
+}
+
+.select-choice-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 10px;
+}
+
+.select-choice-set .select-choice .selectbox {
+  width: 120px;
+  height: 42px;
+}
+
+.select-choice-set .radio-inline-group {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 /* 카메라 관리 */

@@ -47,57 +47,81 @@
           <div class="control-content">
             <div class="tab-group">
               <div class="tab-nav">
-                <a href="monitering_roi.html" class="active">인식영역 설정</a>
-                <a href="monitering_roi2.html">이벤트 설정</a>
+                <a href="monitering_roi.html">인식영역 설정</a>
+                <a href="monitering_roi2.html" class="active">이벤트 설정</a>
                 <a href="monitering_roi3.html">차로 설정</a>
                 <a href="monitering_roi4.html">횡단보도 설정</a>
               </div>
               <!-- //tab-nav -->
               <div class="tab-container">
                 <div id="vehicle" class="tab-content">
-                  <div class="roi-vehicle" data-componant="roi-vehicle">
+                  <div class="roi-vehicle event" data-componant="roi-vehicle">
 
-                    <div class="tbl-border-none short">
-                      <table>
-                        <colgroup>
-                          <col style="width:50%;">
-                          <col>
-                        </colgroup>
-                        <tbody>
-                          <tr>
-                            <th>Detection Threshold</th>
-                            <td><input type="text" class="input-txt txt-center"></td>
-                          </tr>
-                          <tr>
-                            <th>Tracking Threshold</th>
-                            <td><input type="text" class="input-txt txt-center"></td>
-                          </tr>
-                        </tbody>
-                      </table>
+                    <div class="select-choice-set">
+                      <span class="select-choice">
+                        <select class="selectbox bordered">
+                          <option>seq1</option>
+                          <option>seq2</option>
+                          <option>seq3</option>
+                        </select>
+                      </span>
+                      <div class="radio-inline-group bordered">
+                        <label class="radio-bordered">
+                          <input type="radio" name="scope" class="hidden">
+                          <span class="txt">이벤트</span>
+                        </label>
+                        <label class="radio-bordered">
+                          <input type="radio" name="scope" class="hidden">
+                          <span class="txt">차량 방향</span>
+                        </label>
+                      </div>
+                      <!-- //radio-inline-group -->
                     </div>
-                    <!-- //tbl-border-none -->
-
-                    <div class="radio-inline-group bordered">
-                      <label class="radio-bordered">
-                        <input type="radio" name="scope" class="hidden">
-                        <span class="txt">객체표출</span>
-                      </label>
-                      <label class="radio-bordered">
-                        <input type="radio" name="scope" class="hidden">
-                        <span class="txt">딥러닝 인식</span>
-                      </label>
-                    </div>
-                    <!-- //radio-inline-group -->
+                    <!-- //select-choice-set -->
 
                     <div class="btn-inline-group bordered">
                       <button type="button" class="btn-block c-skyblue">ROI 설정</button>
                       <button type="button" class="btn-block">완료</button>
                     </div>
                     <!-- //btn-inline-group -->
+
+                    <div class="tbl-border-none short">
+                      <table>
+                        <colgroup>
+                          <col style="width:35%;">
+                          <col style="width:40%;">
+                          <col style="width:25%;">
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th>이벤트 유형</th>
+                            <td>
+                              <span class="select-choice">
+                                <select class="selectbox bordered">
+                                  <option>선택</option>
+                                  <option>내용1</option>
+                                  <option>내용2</option>
+                                </select>
+                              </span>
+                            </td>
+                            <td rowspan="3"><button type="button" class="btn-block c-skyblue">추가</button></td>
+                          </tr>
+                          <tr>
+                            <th>판단 시간</th>
+                            <td><input type="text" class="input-txt txt-center"></td>
+                          </tr>
+                          <tr>
+                            <th>판단 거리</th>
+                            <td><input type="text" class="input-txt txt-center"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- //tbl-border-none -->
                   </div>
                   <!-- //roi-vehicle -->
 
-                  <div class="unit type2" data-componant="roi-infolist">
+                  <div class="unit type2" data-componant="roi-infolist-event">
                     <header class="unit-header">
                       <button type="button" class="btn-save"><span class="hidden">저장</span></button>
                     </header>
@@ -107,96 +131,121 @@
                           <header class="header-bg"></header>
                           <table class="tbl-bordered-bot">
                             <colgroup>
-                              <col style="width:25%;">
-                              <col style="width:25%;">
-                              <col style="width:25%;">
-                              <col style="width:25%;">
+                              <col style="width:14.28%;">
+                              <col style="width:14.28%;">
+                              <col style="width:14.28%;">
+                              <col style="width:14.28%;">
+                              <col style="width:14.28%;">
+                              <col style="width:14.28%;">
+                              <col style="width:14.28%;">
                             </colgroup>
                             <thead>
                               <tr>
-                                <th><span style="width:25%;">도로</span></th>
-                                <th><span style="width:25%;">type</span></th>
-                                <th><span style="width:25%;">점개수</span></th>
-                                <th><span style="width:25%;">삭제</span></th>
+                                <th><span style="width:14.28%;">도로</span></th>
+                                <th><span style="width:14.28%;">Seq</span></th>
+                                <th><span style="width:14.28%;">type</span></th>
+                                <th><span style="width:14.28%;">시간</span></th>
+                                <th><span style="width:14.28%;">거리</span></th>
+                                <th><span style="width:14.28%;">점개수</span></th>
+                                <th><span style="width:14.28%;">삭제</span></th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
                                 <td>1001</td>
-                                <td>객체표출</td>
-                                <td>10</td>
+                                <td>1</td>
+                                <td>이벤트</td>
+                                <td>1000</td>
+                                <td>100</td>
+                                <td>5</td>
                                 <td>
                                   <button type="button" class="btn-delete"><span class="hidden">삭제</span></button>
                                 </td>
                               </tr>
                               <tr>
                                 <td>1001</td>
-                                <td>객체표출</td>
-                                <td>10</td>
+                                <td>1</td>
+                                <td>이벤트</td>
+                                <td>1000</td>
+                                <td>100</td>
+                                <td>5</td>
                                 <td>
                                   <button type="button" class="btn-delete"><span class="hidden">삭제</span></button>
                                 </td>
                               </tr>
                               <tr>
                                 <td>1001</td>
-                                <td>객체표출</td>
-                                <td>10</td>
+                                <td>1</td>
+                                <td>이벤트</td>
+                                <td>1000</td>
+                                <td>100</td>
+                                <td>5</td>
                                 <td>
                                   <button type="button" class="btn-delete"><span class="hidden">삭제</span></button>
                                 </td>
                               </tr>
                               <tr>
                                 <td>1001</td>
-                                <td>객체표출</td>
-                                <td>10</td>
+                                <td>1</td>
+                                <td>이벤트</td>
+                                <td>1000</td>
+                                <td>100</td>
+                                <td>5</td>
                                 <td>
                                   <button type="button" class="btn-delete"><span class="hidden">삭제</span></button>
                                 </td>
                               </tr>
                               <tr>
                                 <td>1001</td>
-                                <td>객체표출</td>
-                                <td>10</td>
+                                <td>1</td>
+                                <td>이벤트</td>
+                                <td>1000</td>
+                                <td>100</td>
+                                <td>5</td>
                                 <td>
                                   <button type="button" class="btn-delete"><span class="hidden">삭제</span></button>
                                 </td>
                               </tr>
                               <tr>
                                 <td>1001</td>
-                                <td>객체표출</td>
-                                <td>10</td>
+                                <td>1</td>
+                                <td>이벤트</td>
+                                <td>1000</td>
+                                <td>100</td>
+                                <td>5</td>
                                 <td>
                                   <button type="button" class="btn-delete"><span class="hidden">삭제</span></button>
                                 </td>
                               </tr>
                               <tr>
                                 <td>1001</td>
-                                <td>객체표출</td>
-                                <td>10</td>
+                                <td>1</td>
+                                <td>이벤트</td>
+                                <td>1000</td>
+                                <td>100</td>
+                                <td>5</td>
                                 <td>
                                   <button type="button" class="btn-delete"><span class="hidden">삭제</span></button>
                                 </td>
                               </tr>
                               <tr>
                                 <td>1001</td>
-                                <td>객체표출</td>
-                                <td>10</td>
+                                <td>1</td>
+                                <td>이벤트</td>
+                                <td>1000</td>
+                                <td>100</td>
+                                <td>5</td>
                                 <td>
                                   <button type="button" class="btn-delete"><span class="hidden">삭제</span></button>
                                 </td>
                               </tr>
                               <tr>
                                 <td>1001</td>
-                                <td>객체표출</td>
-                                <td>10</td>
-                                <td>
-                                  <button type="button" class="btn-delete"><span class="hidden">삭제</span></button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>1001</td>
-                                <td>객체표출</td>
-                                <td>10</td>
+                                <td>1</td>
+                                <td>이벤트</td>
+                                <td>1000</td>
+                                <td>100</td>
+                                <td>5</td>
                                 <td>
                                   <button type="button" class="btn-delete"><span class="hidden">삭제</span></button>
                                 </td>
