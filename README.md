@@ -1,4 +1,4 @@
-# equipment-ROI-set (PC)
+# 장비설정/ROI설정 (PC)
 
 # 퍼블리싱 파일 확인
 CLI로 아래 명령어를 통해 다운 받거나
