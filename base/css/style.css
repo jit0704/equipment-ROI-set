@@ -809,7 +809,8 @@ footer .copylight.bg-gray2 {
 .logo {
   width: 175px;
   height: 34px;
-  background: url(/base/images/logo.png) no-repeat 0 0;
+  background-repeat: no-repeat;
+  background-position: 0 0;
   background-size: contain;
 }
 
@@ -2272,11 +2273,15 @@ footer .copylight.bg-gray2 {
   background: none;
 }
 
-[data-componant="roi-infolist-walker"] {
-  height: 528px;
+[data-componant="roi-infolist-event"] .unit-content .tbl-bordered-bot td {
+  letter-spacing: -0.5px;
 }
 
-[data-componant="roi-infolist-walker"] .unit-content {
+[data-componant="roi-infolist-road"] {
+  height: 487px;
+}
+
+[data-componant="roi-infolist-road"] .unit-content {
   background: none;
 }
 
@@ -2881,39 +2886,30 @@ footer .copylight.bg-gray2 {
   color: #fff;
   text-align: center;
   font-size: 22px;
+  background: #1c2f42;
 }
 
 .monitering > .ly-left .ly-left-list {
   overflow-y: auto;
   height: 793px;
-  background: #fff;
+  background: #2A3F54;
 }
 
 .monitering > .ly-left .ly-left-list li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 12px;
-  border-bottom: 1px solid #c4c4c4;
+  border-bottom: 1px solid #6a7688;
 }
 
 .monitering > .ly-left .ly-left-list li button {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding-left: 12px;
+  display: block;
+  width: 100%;
+  padding: 12px;
   text-align: left;
-  color: #181616;
+  color: #bfbfbf;
+}
+
+.monitering > .ly-left .ly-left-list li button.active {
+  color: #fff;
+  background: #1f2a35;
 }
 
 .monitering > .ly-center {
@@ -2989,10 +2985,14 @@ footer .copylight.bg-gray2 {
   height: 42px;
 }
 
+.roi-vehicle.event > .short td[rowspan] {
+  padding-left: 10px;
+}
+
 .roi-vehicle.event > .short td .btn-block {
   width: 100%;
   height: 149px;
-  border-left: 10px solid #fff;
+  border-radius: 5px;
 }
 
 .road-choice .radio-bordered .txt {
@@ -3124,6 +3124,43 @@ footer .copylight.bg-gray2 {
   width: calc(100% - 40px);
 }
 
+/* 설정관리 팝업 */
+.mana-modify .modal-content {
+  padding-top: 6px;
+}
+
+.mana-modify .modal-content table {
+  height: 385px;
+}
+
+.mana-modify .modal-btn-group {
+  margin-top: 10px !important;
+}
+
+.manaregist .modal-content {
+  padding-top: 20px;
+}
+
+.manaregist .modal-content table {
+  height: 220px;
+}
+
+.manaregist .modal-btn-group {
+  margin-top: 20px !important;
+}
+
+.manapwd .modal-content {
+  padding-top: 20px;
+}
+
+.manapwd .modal-content table {
+  height: 110px;
+}
+
+.manapwd .modal-btn-group {
+  margin-top: 20px !important;
+}
+
 /* 에러 화면 */
 .error {
   position: relative;
@@ -3225,8 +3262,11 @@ footer .copylight.bg-gray2 {
   [data-componant="roi-infolist"] {
     height: 530px;
   }
-  [data-componant="roi-infolist-walker"] {
-    height: 530px;
+  [data-componant="roi-infolist-event"] {
+    height: 466px;
+  }
+  [data-componant="roi-infolist-road"] {
+    height: 489px;
   }
   /* 파일 업데이트 > 우측 하단 리스트 */
   [data-componant="file-update"] {
