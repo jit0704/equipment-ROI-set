@@ -1419,7 +1419,7 @@ footer .copylight.bg-gray2 {
 }
 
 .road-swiper {
-  margin: 23px 0;
+  margin: 29px 0;
 }
 
 .road-swiper .swiper-slide {
@@ -2257,39 +2257,11 @@ footer .copylight.bg-gray2 {
   line-height: 42px;
 }
 
-[data-componant="roi-infolist"] {
-  height: 528px;
-}
-
-[data-componant="roi-infolist"] .unit-content {
-  background: none;
-}
-
-[data-componant="roi-infolist-event"] {
+[data-componant*="roi-infolist"] {
   height: 474px;
 }
 
-[data-componant="roi-infolist-event"] .unit-content {
-  background: none;
-}
-
-[data-componant="roi-infolist-event"] .unit-content .tbl-bordered-bot td {
-  letter-spacing: -0.5px;
-}
-
-[data-componant="roi-infolist-road"] {
-  height: 487px;
-}
-
-[data-componant="roi-infolist-road"] .unit-content {
-  background: none;
-}
-
-[data-componant="roi-infolist-crosswalk"] {
-  height: 445px;
-}
-
-[data-componant="roi-infolist-crosswalk"] .unit-content {
+[data-componant*="roi-infolist"] .unit-content {
   background: none;
 }
 
@@ -2958,6 +2930,7 @@ footer .copylight.bg-gray2 {
 
 /* 모니터링 > ROI */
 .roi-vehicle {
+  min-height: 277px;
   padding: 10px;
   background: #fff;
 }
@@ -3012,12 +2985,22 @@ footer .copylight.bg-gray2 {
   margin-top: 10px;
 }
 
+.roi-vehicle.crosswalk > .short .radio-default:not(:first-child) {
+  margin-left: 15px;
+}
+
+.roi-vehicle.crosswalk > .short th {
+  text-align: center;
+  border-bottom: 10px solid #fff;
+}
+
 .roi-vehicle.crosswalk > .short .select-choice {
   display: block;
 }
 
 .roi-vehicle.crosswalk > .short .select-choice .selectbox {
   width: 100%;
+  height: 42px;
 }
 
 .road-choice .radio-bordered .txt {
@@ -3285,16 +3268,7 @@ footer .copylight.bg-gray2 {
   }
   /* roi 설정 > 우측 하단 리스트 */
   [data-componant="roi-infolist"] {
-    height: 530px;
-  }
-  [data-componant="roi-infolist-event"] {
     height: 476px;
-  }
-  [data-componant="roi-infolist-road"] {
-    height: 489px;
-  }
-  [data-componant="roi-infolist-crosswalk"] {
-    height: 447px;
   }
   /* 파일 업데이트 > 우측 하단 리스트 */
   [data-componant="file-update"] {

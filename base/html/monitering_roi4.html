@@ -96,22 +96,29 @@
                     <div class="tbl-border-none short">
                       <table>
                         <colgroup>
-                          <col style="width:50%;">
-                          <col style="width:50%;">
+                          <col style="width:15%;">
+                          <col style="width:35%;">
+                          <col style="width:15%;">
+                          <col style="width:35%;">
                         </colgroup>
                         <tbody>
                           <tr>
-                            <td>
-                              <label class="radio-default">
+                            <th>번호</th>
+                            <td colspan="3">
+                              <span class="select-choice">
+                                <select class="selectbox bordered">
+                                  <option>사용</option>
+                                  <option>미사용</option>
+                                </select>
+                              </span>
+                              <!-- <label class="radio-default">
                                 <input type="radio" name="p2" class="hidden">
                                 <span class="txt">사용</span>
                               </label>
-                            </td>
-                            <td>
                               <label class="radio-default">
                                 <input type="radio" name="p2" class="hidden">
                                 <span class="txt">미사용</span>
-                              </label>
+                              </label> -->
                             </td>
                           </tr>
                           <tr>
@@ -125,8 +132,6 @@
                                 </select>
                               </span>
                             </td>
-                          </tr>
-                          <tr>
                             <th>길이</th>
                             <td><input type="text" class="input-txt txt-center"></td>
                           </tr>
