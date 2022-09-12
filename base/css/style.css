@@ -3089,47 +3089,71 @@ footer .copylight.bg-gray2 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  overflow-y: auto;
   width: calc(100% - 1020px);
+  max-height: 824px;
   margin-left: 20px;
+  padding-bottom: 2px;
 }
 
-.camera-manage.list-division .ly-right .tbl-list-header {
+.camera-manage.list-division .ly-right .bind1 .tbl-list-header {
   margin-bottom: 15px;
 }
 
-.camera-manage.list-division .ly-right .tbl-border-none {
+.camera-manage.list-division .ly-right .bind1 .tbl-border-none {
   position: relative;
-  height: 100%;
-  padding: 15px 20px 73px 0;
+  padding: 15px 20px 10px;
   border: 1px solid #c4c4c4;
   border-radius: 5px;
 }
 
-.camera-manage.list-division .ly-right .tbl-border-none th {
-  height: 48px;
+.camera-manage.list-division .ly-right .bind1 .tbl-border-none th {
+  height: 42px;
   padding-left: 24px;
   font-weight: 700;
 }
 
-.camera-manage.list-division .ly-right .tbl-border-none td {
-  height: 48px;
-  padding: 5px 0;
+.camera-manage.list-division .ly-right .bind1 .tbl-border-none td {
+  height: 42px;
 }
 
-.camera-manage.list-division .ly-right .tbl-border-none td .selectbox {
+.camera-manage.list-division .ly-right .bind1 .tbl-border-none td .selectbox {
   background-position-x: 97%;
 }
 
-.camera-manage.list-division .ly-right .tbl-border-none td .input-value-group i {
+.camera-manage.list-division .ly-right .bind1 .tbl-border-none td .input-value-group i {
   margin-top: 0;
 }
 
-.camera-manage.list-division .ly-right .tbl-border-none .btn-block {
+.camera-manage.list-division .ly-right .bind1 .tbl-border-none .btn-block {
   position: absolute;
   left: 20px;
   right: 20px;
   bottom: 15px;
   width: calc(100% - 40px);
+}
+
+.camera-manage.list-division .ly-right .bind2 {
+  padding-top: 10px;
+}
+
+.camera-manage.list-division .ly-right .bind2 > .flexbox {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.camera-manage.list-division .ly-right .bind2 > .flexbox .selectbox {
+  margin-right: 15px;
+}
+
+.camera-manage.list-division .ly-right .bind3 {
+  padding-top: 3px;
+}
+
+.camera-manage.list-division .ly-right .bind3 .tbl-bordered tbody td {
+  height: 42px;
+  text-align: center;
 }
 
 /* 설정관리 팝업 */
@@ -3275,6 +3299,20 @@ footer .copylight.bg-gray2 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 383px;
             flex: 0 1 383px;
+  }
+  /* 카메라 관리 > 우측 컨텐츠 */
+  .camera-manage.list-division .ly-right {
+    max-height: 855px;
+  }
+  .camera-manage.list-division .ly-right .bind1 .tbl-border-none th,
+  .camera-manage.list-division .ly-right .bind1 .tbl-border-none td {
+    height: 44px;
+  }
+  .camera-manage.list-division .ly-right .bind2 {
+    padding-top: 12px;
+  }
+  .camera-manage.list-division .ly-right .bind3 {
+    padding-top: 8px;
   }
 }
 
