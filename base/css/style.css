@@ -3108,13 +3108,13 @@ footer .copylight.bg-gray2 {
 }
 
 .camera-manage.list-division .ly-right .bind1 .tbl-border-none th {
-  height: 42px;
+  height: 45px;
   padding-left: 24px;
   font-weight: 700;
 }
 
 .camera-manage.list-division .ly-right .bind1 .tbl-border-none td {
-  height: 42px;
+  height: 45px;
 }
 
 .camera-manage.list-division .ly-right .bind1 .tbl-border-none td .selectbox {
@@ -3134,7 +3134,8 @@ footer .copylight.bg-gray2 {
 }
 
 .camera-manage.list-division .ly-right .bind2 {
-  padding-top: 10px;
+  margin-top: auto;
+  padding-top: 12px;
 }
 
 .camera-manage.list-division .ly-right .bind2 > .flexbox {
@@ -3143,17 +3144,34 @@ footer .copylight.bg-gray2 {
           align-items: center;
 }
 
-.camera-manage.list-division .ly-right .bind2 > .flexbox .selectbox {
+.camera-manage.list-division .ly-right .bind2 > .flexbox .left .selectbox {
   margin-right: 15px;
 }
 
-.camera-manage.list-division .ly-right .bind3 {
-  padding-top: 3px;
+.camera-manage.list-division .ly-right .bind2 > .flexbox .right {
+  margin-left: auto;
 }
 
-.camera-manage.list-division .ly-right .bind3 .tbl-bordered tbody td {
+.camera-manage.list-division .ly-right .bind2 > .flexbox .right .btn-default {
+  min-width: 94px;
+}
+
+.camera-manage.list-division .ly-right .bind2 .tbl-bordered {
+  min-height: 84px;
+  margin-top: 15px;
+  border: 1px solid #c4c4c4;
+  border-top: 0;
+  border-radius: 5px 5px 0 0;
+}
+
+.camera-manage.list-division .ly-right .bind2 .tbl-bordered tbody td {
   height: 42px;
   text-align: center;
+  border: 0;
+}
+
+.camera-manage.list-division .ly-right .bind2 .tbl-bordered tbody tr:not(:first-child) td {
+  border-top: 1px solid #c4c4c4;
 }
 
 /* 설정관리 팝업 */
@@ -3302,17 +3320,7 @@ footer .copylight.bg-gray2 {
   }
   /* 카메라 관리 > 우측 컨텐츠 */
   .camera-manage.list-division .ly-right {
-    max-height: 855px;
-  }
-  .camera-manage.list-division .ly-right .bind1 .tbl-border-none th,
-  .camera-manage.list-division .ly-right .bind1 .tbl-border-none td {
-    height: 44px;
-  }
-  .camera-manage.list-division .ly-right .bind2 {
-    padding-top: 12px;
-  }
-  .camera-manage.list-division .ly-right .bind3 {
-    padding-top: 8px;
+    max-height: 856px;
   }
 }
 

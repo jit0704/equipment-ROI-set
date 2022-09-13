@@ -186,61 +186,58 @@
             </div>
             <!-- //bind1 -->
 
-            <!-- 220912 지점 도로 정보/목록 항목 추가 -->
+            <!-- 220913 지점 도로 수정 -->
             <div class="bind2">
               <div class="tbl-list-header type2">
-                <h2>지점 도로 정보</h2>
-                <div class="btn-inline-group">
-                  <button type="button" class="btn-default bg-blue2">추가</button>
-                </div>
+                <h2>지점 도로</h2>
               </div>
               <!-- //tbl-list-header -->
               <div class="flexbox">
-                <select class="selectbox bordered" style="width:150px;">
-                  <option>태릉</option>
-                </select>
-                <select class="selectbox bordered" style="width:150px;">
-                  <option>동</option>
-                </select>
-                <span>방향명 : 태릉입구역</span>
+                <span class="left">
+                  <select class="selectbox bordered" style="width:230px;">
+                    <option>종로구-광화문 사거리</option>
+                  </select>
+                  <span>방향명 : 태릉입구역</span>
+                </span>
+                <!-- //left -->
+                <span class="right">
+                  <button type="button" class="btn-default bg-blue2">추가</button>
+                </span>
+                <!-- //right -->
               </div>
+              <!-- //flexbox -->
+              <div class="tbl-bordered">
+                <table>
+                  <colgroup>
+                    <col style="width:15%;">
+                    <col style="width:30%;">
+                    <col style="width:10%;">
+                    <col style="width:35%;">
+                    <col style="width:10%;">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>도로ID</th>
+                      <th>도로 명</th>
+                      <th>방향</th>
+                      <th>방향 명</th>
+                      <th>삭제</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>태릉2</td>
+                      <td>동</td>
+                      <td>태릉입구역1</td>
+                      <td><button type="button" class="btn-delete"><span class="hidden">삭제</span></button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- //tbl-bordered -->
             </div>
             <!-- //bind2 -->
-
-            <div class="bind3">
-              <div class="tbl-list-header type2">
-                <h2>지점 도로 목록</h2>
-              </div>
-              <!-- //tbl-list-header -->
-              <table class="tbl-bordered">
-                <colgroup>
-                  <col style="width:15%;">
-                  <col style="width:30%;">
-                  <col style="width:10%;">
-                  <col style="width:35%;">
-                  <col style="width:10%;">
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th>도로ID</th>
-                    <th>도로 명</th>
-                    <th>방향</th>
-                    <th>방향 명</th>
-                    <th>삭제</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>태릉2</td>
-                    <td>동</td>
-                    <td>태릉입구역1</td>
-                    <td><button type="button" class="btn-delete"><span class="hidden">삭제</span></button></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <!-- //bind3 -->
           </div>
           <!-- //ly-right -->
         </div>
