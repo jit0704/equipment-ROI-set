@@ -2994,6 +2994,16 @@ footer .copylight.bg-gray2 {
   border-bottom: 10px solid #fff;
 }
 
+.roi-vehicle.crosswalk > .short td[rowspan] {
+  padding-left: 10px;
+}
+
+.roi-vehicle.crosswalk > .short td .btn-block {
+  width: 100%;
+  height: 99px;
+  border-radius: 5px;
+}
+
 .roi-vehicle.crosswalk > .short .select-choice {
   display: block;
 }
