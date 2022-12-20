@@ -162,6 +162,10 @@ a, span, em, button, label, i, b, strong {
 /* ###############################
     help class
 ################################## */
+.txt-bold {
+  font-weight: 800 !important;
+}
+
 .txt-left {
   text-align: left !important;
 }
@@ -2892,6 +2896,71 @@ footer .copylight.bg-gray2 {
   background: #1f2a35;
 }
 
+.monitering > .ly-left .spot-info-list {
+  color: #bfbfbf;
+}
+
+.monitering > .ly-left .spot-info-list li {
+  padding: 10px;
+  font-weight: 800;
+}
+
+.monitering > .ly-left .spot-state-list {
+  color: #bfbfbf;
+}
+
+.monitering > .ly-left .spot-state-list li {
+  padding: 10px;
+}
+
+.monitering > .ly-left .spot-state-list li:last-child {
+  border-bottom: 0;
+}
+
+.monitering > .ly-left .spot-state-list .radar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: rwo;
+          flex-direction: rwo;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.monitering > .ly-left .spot-state-list .radar-power {
+  width: 35px;
+  height: 35px;
+  background: url(/base/images/radar_power.png) no-repeat 0 0;
+  background-size: contain;
+}
+
+.monitering > .ly-left .spot-state-list .radar-connect {
+  width: 35px;
+  height: 35px;
+  background: url(/base/images/radar_connect.png) no-repeat 0 0;
+  background-size: contain;
+}
+
+.monitering > .ly-left .spot-state-list .radar-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+.monitering > .ly-left .spot-state-list .radar-circle.green {
+  background: #8dc63f;
+}
+
+.monitering > .ly-left .spot-state-list .radar-circle.red {
+  background: #f36e21;
+}
+
 .monitering > .ly-center {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -2910,6 +2979,23 @@ footer .copylight.bg-gray2 {
   background: #0e2a3e;
 }
 
+.monitering > .ly-main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 12px 12px 0;
+}
+
 .monitering .bind-infomation [data-componant="camera-info"] .tbl-border-none {
   height: 293px;
   overflow-y: auto;
@@ -2926,6 +3012,67 @@ footer .copylight.bg-gray2 {
 
 .monitering .bind-infomation.type2 [data-componant="branch-info"] {
   display: none;
+}
+
+/* 모니터링 > VDS 교통정보 */
+.data-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 0 12px;
+}
+
+.data-info-container .data-info-comopnent {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.data-info-comopnent h3 {
+  padding: 5px 20px 20px;
+  font-size: 22px;
+  color: #fff;
+}
+
+.data-info-comopnent .header-bind {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 20px 0 12px 20px;
+}
+
+.data-info-comopnent .header-bind h3 {
+  padding: 0 0 8px 0;
+}
+
+.data-info-comopnent .header-bind .txt {
+  font-size: 12px;
+  color: #fff;
+}
+
+.data-info-comopnent .tbl-sticky-inner {
+  height: 321px;
+}
+
+.data-info-comopnent .tbl-sticky tbody td {
+  line-height: 16px;
 }
 
 /* 모니터링 > ROI */
