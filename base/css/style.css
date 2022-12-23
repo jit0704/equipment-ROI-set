@@ -477,6 +477,27 @@ a, span, em, button, label, i, b, strong {
   padding: 12px 30px;
 }
 
+.vds-system-container {
+  background: #fff;
+}
+
+.vds-system-container .monitering > .ly-left {
+  padding: 0 15px;
+  background: #002845;
+}
+
+.vds-system-container .monitering > .ly-left h2 {
+  line-height: 65px;
+  font-size: 24px;
+  font-weight: 700;
+  background: none;
+}
+
+.vds-system-container .monitering > .ly-left .ly-left-list {
+  overflow-y: overlay;
+  background: none;
+}
+
 footer {
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -2897,52 +2918,132 @@ footer .copylight.bg-gray2 {
 }
 
 .monitering > .ly-left .spot-info-list {
-  color: #bfbfbf;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.9);
+  background: #001730;
+  border-radius: 8px;
 }
 
 .monitering > .ly-left .spot-info-list li {
-  padding: 10px;
-  font-weight: 800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 10px;
+  padding: 0 5px;
+  line-height: 41.86px;
+  font-size: 18px;
+  border-bottom-color: rgba(255, 255, 255, 0.9);
+}
+
+.monitering > .ly-left .spot-info-list li:last-child {
+  border-bottom: 0;
+}
+
+.monitering > .ly-left .spot-info-list li .name {
+  font-weight: 700;
+}
+
+.monitering > .ly-left .spot-info-list li .name::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 8px;
+  vertical-align: 5px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 3px;
 }
 
 .monitering > .ly-left .spot-state-list {
-  color: #bfbfbf;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .monitering > .ly-left .spot-state-list li {
-  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 10px;
+  padding: 0 5px;
+  line-height: 41.86px;
+  font-size: 18px;
+  border-bottom-color: rgba(255, 255, 255, 0.9);
 }
 
 .monitering > .ly-left .spot-state-list li:last-child {
   border-bottom: 0;
 }
 
+.monitering > .ly-left .spot-state-list li .data {
+  font-weight: 700;
+}
+
+.monitering > .ly-left .spot-state-list li.dot {
+  display: block;
+}
+
+.monitering > .ly-left .spot-state-list li.dot::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 8px;
+  vertical-align: 5px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 3px;
+}
+
 .monitering > .ly-left .spot-state-list .radar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: rwo;
-          flex-direction: rwo;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding: 0 5px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 0;
+}
+
+.monitering > .ly-left .spot-state-list .radar.first {
+  padding-top: 15px;
+}
+
+.monitering > .ly-left .spot-state-list .radar.last {
+  padding-bottom: 15px;
+}
+
+.monitering > .ly-left .spot-state-list .radar.first2 {
+  padding-top: 9px;
+}
+
+.monitering > .ly-left .spot-state-list .radar.last2 {
+  padding-bottom: 9px;
+}
+
+.monitering > .ly-left .spot-state-list .radar + .radar {
+  margin-top: 8px;
 }
 
 .monitering > .ly-left .spot-state-list .radar-power {
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   background: url(/base/images/radar_power.png) no-repeat 0 0;
   background-size: contain;
 }
 
 .monitering > .ly-left .spot-state-list .radar-connect {
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   background: url(/base/images/radar_connect.png) no-repeat 0 0;
   background-size: contain;
 }
@@ -2993,7 +3094,7 @@ footer .copylight.bg-gray2 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 12px 12px 0;
+  padding: 17px 30px;
 }
 
 .monitering .bind-infomation [data-componant="camera-info"] .tbl-border-none {
@@ -3026,7 +3127,7 @@ footer .copylight.bg-gray2 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  gap: 0 12px;
+  gap: 0 30px;
 }
 
 .data-info-container .data-info-comopnent {
@@ -3035,10 +3136,18 @@ footer .copylight.bg-gray2 {
           flex: 1;
 }
 
+.data-info-container .manual-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .data-info-comopnent h3 {
-  padding: 5px 20px 20px;
-  font-size: 22px;
-  color: #fff;
+  margin-bottom: 15px;
+  line-height: 25px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #0c4670;
 }
 
 .data-info-comopnent .header-bind {
@@ -3055,24 +3164,59 @@ footer .copylight.bg-gray2 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 20px 0 12px 20px;
+  padding: 37px 0 12px 0;
 }
 
 .data-info-comopnent .header-bind h3 {
-  padding: 0 0 8px 0;
+  margin-bottom: 0;
 }
 
 .data-info-comopnent .header-bind .txt {
   font-size: 12px;
-  color: #fff;
+  color: #0c4670;
+}
+
+.data-info-comopnent .unit.type2 .unit-content {
+  height: calc(100% - 44px);
+}
+
+.data-info-comopnent .tbl-sticky {
+  height: 44px;
+}
+
+.data-info-comopnent .tbl-sticky .header-bg {
+  height: 44px;
 }
 
 .data-info-comopnent .tbl-sticky-inner {
-  height: 321px;
+  height: 314px;
+  overflow-y: overlay;
+  border: 1px solid #a7a9ac;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
-.data-info-comopnent .tbl-sticky tbody td {
-  line-height: 16px;
+.data-info-comopnent .tbl-sticky-inner thead span {
+  font-size: 18px;
+}
+
+.data-info-comopnent .tbl-sticky-inner tbody tr:nth-child(even) td {
+  background: rgba(231, 237, 240, 0.5);
+}
+
+.data-info-comopnent .tbl-sticky-inner tbody td {
+  line-height: 17px;
+  border: 0 !important;
+}
+
+.data-info-comopnent .tbl-sticky-inner tbody td:first-child {
+  font-weight: 700;
+}
+
+/* 모니터링 > VDS 교통수동정보 */
+.manual-info th,
+.manual-info td {
+  color: #fff;
 }
 
 /* 모니터링 > ROI */
