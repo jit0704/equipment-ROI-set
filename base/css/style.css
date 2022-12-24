@@ -3214,9 +3214,87 @@ footer .copylight.bg-gray2 {
 }
 
 /* 모니터링 > VDS 교통수동정보 */
-.manual-info th,
-.manual-info td {
-  color: #fff;
+.vds-traffic-manual-info .traffic-manual-info-container:first-child {
+  border: 1px solid #181616;
+}
+
+.traffic-manual-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.traffic-manual-info-container .manual-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.traffic-manual-info-container .tbl-border-none {
+  padding: 5px 20px;
+  border-right: 1px solid #181616;
+}
+
+.traffic-manual-info-container .tbl-border-none th {
+  font-weight: 700;
+}
+
+.traffic-manual-info-container .tbl-border-none td {
+  font-size: 14px;
+}
+
+.traffic-manual-info-container .btn-inline-group {
+  gap: 0 30px;
+  padding: 20px;
+}
+
+.traffic-manual-info-container .btn-inline-group .btn-block {
+  border-radius: 5px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.traffic-manual-info-container2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 0 30px;
+  padding-top: 40px;
+}
+
+.traffic-manual-info-container2 > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.traffic-manual-info-container2 .data-info-comopnent .tbl-sticky-inner {
+  height: 576px;
+}
+
+.traffic-manual-info-container2 .tbl-celled {
+  margin-top: 40px;
+}
+
+.traffic-manual-info-container2 .tbl-celled th {
+  padding: 11px 0;
 }
 
 /* 모니터링 > ROI */
