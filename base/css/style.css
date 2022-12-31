@@ -162,6 +162,14 @@ a, span, em, button, label, i, b, strong {
 /* ###############################
     help class
 ################################## */
+.mw100px {
+  min-width: 100px !important;
+}
+
+.w100per {
+  width: 100% !important;
+}
+
 .txt-bold {
   font-weight: 800 !important;
 }
@@ -3224,6 +3232,97 @@ footer .copylight.bg-gray2 {
   font-weight: 700;
 }
 
+.data-info-comopnent .tbl-border-none {
+  padding: 0;
+}
+
+.data-info-comopnent .tbl-border-none th {
+  font-weight: 700;
+}
+
+.data-info-comopnent .tbl-border-none td {
+  height: 32px;
+  padding: 2px 0;
+}
+
+.data-info-comopnent .tbl-border-none .input-txt {
+  border-radius: 0;
+}
+
+.data-info-comopnent .tbl-border-none .select-choice {
+  display: block;
+}
+
+.data-info-comopnent .tbl-border-none .select-choice .selectbox {
+  width: 100%;
+  padding-top: 6px;
+  padding-bottom: 7px;
+}
+
+.data-info-comopnent .tbl-border-none .input-value-group {
+  gap: 0 15px;
+}
+
+.data-info-comopnent .tbl-border-none .input-value-group .input-txt:first-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.data-info-comopnent .tbl-border-none .input-value-group .input-txt:last-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  width: 100px;
+}
+
+.data-info-comopnent .btn-inline-group {
+  padding: 15px 0;
+}
+
+.data-info-comopnent .btn-inline-group.dozen {
+  gap: 0 20px;
+}
+
+.data-info-comopnent .btn-inline-group.dozen .btn-block {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.data-info-comopnent .lane-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.data-info-comopnent .lane-set .fill1 {
+  width: 25px;
+  height: 25px;
+  background: #c4c4c4;
+}
+
+.data-info-comopnent .lane-set .fill2 {
+  width: 25px;
+  height: 25px;
+  background: #181616;
+}
+
+.data-info-comopnent .lane-set .fill3 {
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border: 1px solid #181616;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 /* 모니터링 > VDS 교통수동정보 */
 .vds-traffic-manual-info {
   gap: 0 30px;
@@ -3304,6 +3403,30 @@ footer .copylight.bg-gray2 {
 
 .traffic-manual-info-container-right .tbl-celled th {
   padding: 11px 0;
+}
+
+/* 모니터링 > VDS 관리 */
+.vds-traffic-admin {
+  gap: 0 30px;
+}
+
+.vds-traffic-admin.ly-main {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.vds-traffic-admin-container-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.vds-traffic-admin-container-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 /* 모니터링 > ROI */

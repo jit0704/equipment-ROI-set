@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>VDS 교통수동정보</title>
+  <title>VDS 관리</title>
   <script type="text/javascript" src="/base/js/lib/jquery-3.5.1.min.js"></script>
   <script type="text/javascript" src="/base/js/lib/jquery.modal.min.js"></script>
   <script type="text/javascript" src="/base/js/common/includeHTML.js"></script> <!-- 퍼블리싱 확인용 include -->
@@ -21,8 +21,8 @@
         <!-- //ly-left -->
 
         <article class="ly-main vds-traffic-admin">
-          <div class="vds-traffic-admin-container">
-            <div class="vds-traffic-admin-info">
+          <div class="vds-traffic-admin-container-left">
+            <div class="data-info-comopnent">
               <h3>지점 정보</h3>
               <div class="tbl-border-none">
                 <table>
@@ -42,6 +42,10 @@
                           </select>
                         </span>
                       </td>
+                    </tr>
+                    <tr>
+                      <th>제어기 일련번호</th>
+                      <td><input type="text" class="input-txt txt-center"></td>
                     </tr>
                     <tr>
                       <th>CSN</th>
@@ -84,11 +88,65 @@
               </div>
               <!-- //tbl-border-none -->
               <div class="btn-inline-group align-right">
-                <button type="button" class="btn-block c-skyblue">저장</button>
+                <button type="button" class="btn-block c-skyblue mw100px">저장</button>
               </div>
+              <!-- //btn-inline-group -->
             </div>
-            <!-- //vds-traffic-admin-info -->
-            <div class="vds-traffic-admin-info">
+            <!-- //data-info-comopnent -->
+
+            <div class="data-info-comopnent">
+              <h3>교통 정보 설정</h3>
+              <div class="tbl-border-none">
+                <table>
+                  <thead>
+                    <colgroup>
+                      <col style="width:35%;" />
+                      <col style="width:65%;" />
+                    </colgroup>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>현장 처리주기(초)</th>
+                      <td><input type="text" class="input-txt txt-center"></td>
+                    </tr>
+                    <tr>
+                      <th>센터 전송주기(초)</th>
+                      <td><input type="text" class="input-txt txt-center"></td>
+                    </tr>
+                    <tr>
+                      <th>장비 동작 상태 전송주기(초)</th>
+                      <td><input type="text" class="input-txt txt-center"></td>
+                    </tr>
+                    <tr>
+                      <th>장비 동작 상태 이력 전송주기(초)</th>
+                      <td><input type="text" class="input-txt txt-center"></td>
+                    </tr>
+                    <tr>
+                      <th>개별차량 정보 전송주기(초)</th>
+                      <td>
+                        <span class="select-choice">
+                          <select class="selectbox bordered">
+                            <option>1 or 0.5</option>
+                            <option>내용1</option>
+                            <option>내용2</option>
+                          </select>
+                        </span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- //tbl-border-none -->
+              <div class="btn-inline-group align-right">
+                <button type="button" class="btn-block c-skyblue mw100px">저장</button>
+              </div>
+              <!-- //btn-inline-group -->
+            </div>
+            <!-- //data-info-comopnent -->
+          </div>
+          <!-- //vds-traffic-admin-container-left -->
+          <div class="vds-traffic-admin-container-right">
+            <div class="data-info-comopnent">
               <h3>통신 설정</h3>
               <div class="tbl-border-none">
                 <table>
@@ -113,8 +171,8 @@
                       <th>Radar1 IP / Port</th>
                       <td>
                         <span class="input-value-group">
-                          <input type="text" class="input-txt type2 txt-center">
-                          <input type="text" class="input-txt type2 txt-center">
+                          <input type="text" class="input-txt txt-center">
+                          <input type="text" class="input-txt txt-center">
                         </span>
                       </td>
                     </tr>
@@ -122,8 +180,8 @@
                       <th>Radar2 IP / Port</th>
                       <td>
                         <span class="input-value-group">
-                          <input type="text" class="input-txt type2 txt-center">
-                          <input type="text" class="input-txt type2 txt-center">
+                          <input type="text" class="input-txt txt-center">
+                          <input type="text" class="input-txt txt-center">
                         </span>
                       </td>
                     </tr>
@@ -131,8 +189,8 @@
                       <th>Radar3 IP / Port</th>
                       <td>
                         <span class="input-value-group">
-                          <input type="text" class="input-txt type2 txt-center">
-                          <input type="text" class="input-txt type2 txt-center">
+                          <input type="text" class="input-txt txt-center">
+                          <input type="text" class="input-txt txt-center">
                         </span>
                       </td>
                     </tr>
@@ -140,8 +198,8 @@
                       <th>Radar4 IP / Port</th>
                       <td>
                         <span class="input-value-group">
-                          <input type="text" class="input-txt type2 txt-center">
-                          <input type="text" class="input-txt type2 txt-center">
+                          <input type="text" class="input-txt txt-center">
+                          <input type="text" class="input-txt txt-center">
                         </span>
                       </td>
                     </tr>
@@ -150,12 +208,100 @@
               </div>
               <!-- //tbl-border-none -->
               <div class="btn-inline-group align-right">
+                <button type="button" class="btn-block c-skyblue mw100px">저장</button>
+              </div>
+              <!-- //btn-inline-group -->
+            </div>
+            <!-- //data-info-comopnent -->
+
+            <div class="data-info-comopnent">
+              <h3>집계 차로 설정</h3>
+              <div class="tbl-border-none">
+                <table>
+                  <colgroup>
+                    <col style="width:30%;" />
+                    <col style="width:70%;" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>차로 상행(1~8차로)</th>
+                      <td>
+                        <span class="lane-set">
+                          <i class="fill1"></i>
+                          <i class="fill1"></i>
+                          <i class="fill1"></i>
+                          <i class="fill1"></i>
+                          <i class="fill2"></i>
+                          <i class="fill2"></i>
+                          <i class="fill2"></i>
+                          <i class="fill2"></i>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>차로 하행(1~8차로)</th>
+                      <td>
+                        <span class="lane-set">
+                          <i class="fill1"></i>
+                          <i class="fill1"></i>
+                          <i class="fill1"></i>
+                          <i class="fill1"></i>
+                          <i class="fill3"></i>
+                          <i class="fill3"></i>
+                          <i class="fill2"></i>
+                          <i class="fill2"></i>
+                        </span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- //tbl-border-none -->
+              <div class="btn-inline-group dozen align-right">
+                <button type="button" class="btn-block c-skyblue">레이더 설정 값 불러오기</button>
                 <button type="button" class="btn-block c-skyblue">저장</button>
               </div>
+              <!-- //btn-inline-group -->
             </div>
-            <!-- //vds-traffic-admin-info -->
+            <!-- //data-info-comopnent -->
+
+            <div class="data-info-comopnent">
+              <h3>제어 요청</h3>
+              <div class="tbl-border-none">
+                <div class="tbl-border-none">
+                  <table>
+                    <colgroup>
+                      <col style="width:30%;" />
+                      <col style="width:70%;" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>S/W 리셋</th>
+                        <td>
+                          <button type="button" class="btn-block c-skyblue w100per">리셋 요청</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>H/W 리셋</th>
+                        <td>
+                          <button type="button" class="btn-block c-skyblue w100per">리셋 요청</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>H/W 상태 정보 요청</th>
+                        <td>
+                          <button type="button" class="btn-block c-skyblue w100per">정보 요청</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- //tbl-border-none -->
+            </div>
+            <!-- //data-info-comopnent -->
           </div>
-          <!-- //vds-traffic-admin-container -->
+          <!-- //vds-traffic-admin-container-right -->
         </article>
         <!-- //ly-main -->
 
