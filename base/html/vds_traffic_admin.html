@@ -22,8 +22,12 @@
 
         <article class="ly-main vds-traffic-admin">
           <div class="vds-traffic-admin-container-left">
-            <div class="data-info-comopnent">
-              <h3>지점 정보</h3>
+            <div class="data-info-comopnent type2">
+              <div class="header-bind type2">
+                <h3>지점 정보</h3>
+                <button type="button" class="btn-save type3">저장</button>
+              </div>
+              <!-- //header-bind -->
               <div class="tbl-border-none">
                 <table>
                   <colgroup>
@@ -49,12 +53,32 @@
                     </tr>
                     <tr>
                       <th>CSN</th>
-                      <td><input type="text" class="input-txt txt-center"></td>
+                      <td><input type="text" class="input-txt txt-center given-bg-gray"></td>
                     </tr>
                     <tr>
                       <th>이정</th>
                       <td><input type="text" class="input-txt txt-center"></td>
                     </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- //tbl-border-none -->
+            </div>
+            <!-- //data-info-comopnent -->
+
+            <div class="data-info-comopnent type2">
+              <div class="header-bind type2">
+                <h3>설치 정보</h3>
+                <button type="button" class="btn-save type3">저장</button>
+              </div>
+              <!-- //header-bind -->
+              <div class="tbl-border-none">
+                <table>
+                  <colgroup>
+                    <col style="width:30%;" />
+                    <col style="width:70%;" />
+                  </colgroup>
+                  <tbody>
                     <tr>
                       <th>설치방향</th>
                       <td><input type="text" class="input-txt txt-center"></td>
@@ -87,15 +111,14 @@
                 </table>
               </div>
               <!-- //tbl-border-none -->
-              <div class="btn-inline-group align-right">
-                <button type="button" class="btn-block c-skyblue mw100px">저장</button>
-              </div>
-              <!-- //btn-inline-group -->
             </div>
-            <!-- //data-info-comopnent -->
 
-            <div class="data-info-comopnent">
-              <h3>교통 정보 설정</h3>
+            <div class="data-info-comopnent type2">
+              <div class="header-bind type2">
+                <h3>교통 정보 설정</h3>
+                <button type="button" class="btn-save type3">저장</button>
+              </div>
+              <!-- //header-bind -->
               <div class="tbl-border-none">
                 <table>
                   <thead>
@@ -137,17 +160,17 @@
                 </table>
               </div>
               <!-- //tbl-border-none -->
-              <div class="btn-inline-group align-right">
-                <button type="button" class="btn-block c-skyblue mw100px">저장</button>
-              </div>
-              <!-- //btn-inline-group -->
             </div>
             <!-- //data-info-comopnent -->
           </div>
           <!-- //vds-traffic-admin-container-left -->
           <div class="vds-traffic-admin-container-right">
-            <div class="data-info-comopnent">
-              <h3>통신 설정</h3>
+            <div class="data-info-comopnent type2">
+              <div class="header-bind type2">
+                <h3>통신 설정</h3>
+                <button type="button" class="btn-save type3">저장</button>
+              </div>
+              <!-- //header-bind -->
               <div class="tbl-border-none">
                 <table>
                   <colgroup>
@@ -171,8 +194,8 @@
                       <th>Radar1 IP / Port</th>
                       <td>
                         <span class="input-value-group">
-                          <input type="text" class="input-txt txt-center">
-                          <input type="text" class="input-txt txt-center">
+                          <input type="text" class="input-txt txt-center given-bg-gray">
+                          <input type="text" class="input-txt txt-center given-bg-gray">
                         </span>
                       </td>
                     </tr>
@@ -180,8 +203,8 @@
                       <th>Radar2 IP / Port</th>
                       <td>
                         <span class="input-value-group">
-                          <input type="text" class="input-txt txt-center">
-                          <input type="text" class="input-txt txt-center">
+                          <input type="text" class="input-txt txt-center given-bg-gray">
+                          <input type="text" class="input-txt txt-center given-bg-gray">
                         </span>
                       </td>
                     </tr>
@@ -189,8 +212,8 @@
                       <th>Radar3 IP / Port</th>
                       <td>
                         <span class="input-value-group">
-                          <input type="text" class="input-txt txt-center">
-                          <input type="text" class="input-txt txt-center">
+                          <input type="text" class="input-txt txt-center given-bg-gray">
+                          <input type="text" class="input-txt txt-center given-bg-gray">
                         </span>
                       </td>
                     </tr>
@@ -207,15 +230,18 @@
                 </table>
               </div>
               <!-- //tbl-border-none -->
-              <div class="btn-inline-group align-right">
-                <button type="button" class="btn-block c-skyblue mw100px">저장</button>
-              </div>
-              <!-- //btn-inline-group -->
             </div>
             <!-- //data-info-comopnent -->
 
-            <div class="data-info-comopnent">
-              <h3>집계 차로 설정</h3>
+            <div class="data-info-comopnent type2 vds-lane-set">
+              <div class="header-bind type2">
+                <h3>집계 차로 설정</h3>
+                <span class="bind-right">
+                  <button type="button" class="btn-save type3" style="width:170px;">레이더 설정 값 불러오기</button>
+                  <button type="button" class="btn-save type3">저장</button>
+                </span>
+              </div>
+              <!-- //header-bind -->
               <div class="tbl-border-none">
                 <table>
                   <colgroup>
@@ -226,46 +252,89 @@
                     <tr>
                       <th>차로 상행(1~8차로)</th>
                       <td>
-                        <span class="lane-set">
-                          <i class="fill1"></i>
-                          <i class="fill1"></i>
-                          <i class="fill1"></i>
-                          <i class="fill1"></i>
-                          <i class="fill2"></i>
-                          <i class="fill2"></i>
-                          <i class="fill2"></i>
-                          <i class="fill2"></i>
-                        </span>
+                        <div class="radio-inline-group">
+                          <label class="radio-default c-navy">
+                            <input type="radio" class="hidden" checked>
+                            <span class="txt"></span>
+                          </label>
+                          <label class="radio-default c-navy">
+                            <input type="radio" class="hidden" checked>
+                            <span class="txt"></span>
+                          </label>
+                          <label class="radio-default c-navy">
+                            <input type="radio" class="hidden">
+                            <span class="txt"></span>
+                          </label>
+                          <label class="radio-default c-navy">
+                            <input type="radio" class="hidden">
+                            <span class="txt"></span>
+                          </label>
+                          <label class="radio-default c-navy">
+                            <input type="radio" class="hidden" disabled>
+                            <span class="txt"></span>
+                          </label>
+                          <label class="radio-default c-navy">
+                            <input type="radio" class="hidden" disabled>
+                            <span class="txt"></span>
+                          </label>
+                          <label class="radio-default c-navy">
+                            <input type="radio" class="hidden" disabled>
+                            <span class="txt"></span>
+                          </label>
+                          <label class="radio-default c-navy">
+                            <input type="radio" class="hidden" disabled>
+                            <span class="txt"></span>
+                          </label>
+                        </div>
                       </td>
                     </tr>
                     <tr>
                       <th>차로 하행(1~8차로)</th>
                       <td>
-                        <span class="lane-set">
-                          <i class="fill1"></i>
-                          <i class="fill1"></i>
-                          <i class="fill1"></i>
-                          <i class="fill1"></i>
-                          <i class="fill3"></i>
-                          <i class="fill3"></i>
-                          <i class="fill2"></i>
-                          <i class="fill2"></i>
-                        </span>
+                        <div class="radio-inline-group">
+                          <label class="radio-default c-navy">
+                            <input type="radio" class="hidden">
+                            <span class="txt"></span>
+                          </label>
+                          <label class="radio-default c-navy">
+                            <input type="radio" class="hidden">
+                            <span class="txt"></span>
+                          </label>
+                          <label class="radio-default c-navy">
+                            <input type="radio" class="hidden">
+                            <span class="txt"></span>
+                          </label>
+                          <label class="radio-default c-navy">
+                            <input type="radio" class="hidden">
+                            <span class="txt"></span>
+                          </label>
+                          <label class="radio-default c-navy">
+                            <input type="radio" class="hidden">
+                            <span class="txt"></span>
+                          </label>
+                          <label class="radio-default c-navy">
+                            <input type="radio" class="hidden">
+                            <span class="txt"></span>
+                          </label>
+                          <label class="radio-default c-navy">
+                            <input type="radio" class="hidden" disabled>
+                            <span class="txt"></span>
+                          </label>
+                          <label class="radio-default c-navy">
+                            <input type="radio" class="hidden" disabled>
+                            <span class="txt"></span>
+                          </label>
+                        </div>
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
               <!-- //tbl-border-none -->
-              <div class="btn-inline-group dozen align-right">
-                <button type="button" class="btn-block c-skyblue">레이더 설정 값 불러오기</button>
-                <button type="button" class="btn-block c-skyblue">저장</button>
-              </div>
-              <!-- //btn-inline-group -->
             </div>
             <!-- //data-info-comopnent -->
 
-            <div class="data-info-comopnent">
+            <div class="data-info-comopnent type2 vds-control">
               <h3>제어 요청</h3>
               <div class="tbl-border-none">
                 <div class="tbl-border-none">
@@ -278,19 +347,13 @@
                       <tr>
                         <th>S/W 리셋</th>
                         <td>
-                          <button type="button" class="btn-block c-skyblue w100per">리셋 요청</button>
+                          <button type="button" class="btn-save type3 w100per">리셋 요청</button>
                         </td>
                       </tr>
                       <tr>
                         <th>H/W 리셋</th>
                         <td>
-                          <button type="button" class="btn-block c-skyblue w100per">리셋 요청</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>H/W 상태 정보 요청</th>
-                        <td>
-                          <button type="button" class="btn-block c-skyblue w100per">정보 요청</button>
+                          <button type="button" class="btn-save type3 w100per">리셋 요청</button>
                         </td>
                       </tr>
                     </tbody>

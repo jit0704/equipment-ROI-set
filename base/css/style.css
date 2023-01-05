@@ -231,6 +231,10 @@ a, span, em, button, label, i, b, strong {
   padding-top: 10px !important;
 }
 
+.pdt0 {
+  padding-top: 0 !important;
+}
+
 .pdb0 {
   padding-bottom: 0 !important;
 }
@@ -1535,6 +1539,16 @@ footer .copylight.bg-gray2 {
 .btn-save.type2 {
   background-image: url(/base/images/btn_save2.png);
   background-size: 24px;
+}
+
+.btn-save.type3 {
+  width: 50px;
+  height: 28px;
+  line-height: 28px;
+  background: #094670;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
 }
 
 .btn-delete {
@@ -3206,6 +3220,18 @@ footer .copylight.bg-gray2 {
   color: #0c4670;
 }
 
+.data-info-comopnent .header-bind.type2 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 15px;
+}
+
+.data-info-comopnent .header-bind.type2 h3 {
+  line-height: 24px;
+  font-size: 24px;
+}
+
 .data-info-comopnent .unit.type2 .unit-content {
   height: calc(100% - 44px);
 }
@@ -3223,6 +3249,7 @@ footer .copylight.bg-gray2 {
 }
 
 .data-info-comopnent .tbl-sticky-inner tbody td {
+  padding: 12px 0 !important;
   line-height: 15px;
   font-size: 13px;
   border: 0 !important;
@@ -3260,7 +3287,7 @@ footer .copylight.bg-gray2 {
 }
 
 .data-info-comopnent .tbl-border-none .input-value-group {
-  gap: 0 15px;
+  gap: 0 6px;
 }
 
 .data-info-comopnent .tbl-border-none .input-value-group .input-txt:first-child {
@@ -3273,7 +3300,7 @@ footer .copylight.bg-gray2 {
   -webkit-box-flex: 0;
       -ms-flex: 0;
           flex: 0;
-  width: 100px;
+  width: 90px;
 }
 
 .data-info-comopnent .btn-inline-group {
@@ -3289,38 +3316,99 @@ footer .copylight.bg-gray2 {
   padding-right: 15px;
 }
 
-.data-info-comopnent .lane-set {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+.data-info-comopnent .radio-inline-group {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.data-info-comopnent .lane-set .fill1 {
-  width: 25px;
-  height: 25px;
-  background: #c4c4c4;
+.data-info-comopnent .radio-default {
+  position: relative;
+  width: 20px;
+  height: 20px;
 }
 
-.data-info-comopnent .lane-set .fill2 {
-  width: 25px;
-  height: 25px;
-  background: #181616;
+.data-info-comopnent .radio-default .txt {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.data-info-comopnent .lane-set .fill3 {
-  width: 25px;
-  height: 25px;
-  background: #fff;
-  border: 1px solid #181616;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.data-info-comopnent .radio-default .txt::before {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #094670;
+}
+
+.data-info-comopnent .radio-default .txt::after {
+  top: 5px;
+  left: 5.5px;
+  width: 10px;
+  height: 10px;
+  background: #094670;
+}
+
+.data-info-comopnent.type2 {
+  margin-bottom: 32px;
+  padding: 0 32px 32px;
+  border-bottom: 1px solid #bcc0cc;
+}
+
+.data-info-comopnent.type2 .tbl-border-none th {
+  color: #737988;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.data-info-comopnent.type2 .tbl-border-none td {
+  height: 28px;
+  padding: 3px 0;
+}
+
+.data-info-comopnent.type2 .tbl-border-none td .input-txt {
+  height: inherit;
+  padding: 5px;
+  font-size: 13px;
+  border-color: #bcc0cc;
+  border-radius: 5px;
+}
+
+.data-info-comopnent.type2 .tbl-border-none td .input-txt.given-bg-gray {
+  background: #e6e7e8;
+}
+
+.data-info-comopnent.type2 .tbl-border-none td .select-choice {
+  position: relative;
+}
+
+.data-info-comopnent.type2 .tbl-border-none td .select-choice::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 1px;
+  height: 28px;
+  background: #bcc0cc;
+}
+
+.data-info-comopnent.type2 .tbl-border-none td .select-choice .selectbox {
+  padding-top: 4px;
+  padding-bottom: 5px;
+  border-color: #bcc0cc;
+  border-radius: 5px;
+  font-size: 13px;
+  background-image: url(/base/images/ic_arr_down2.png);
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 8px);
+  background-size: 14px;
+}
+
+.data-info-comopnent.type2 .tbl-border-none tr:first-child td {
+  padding-top: 0;
+}
+
+.data-info-comopnent.type2 .tbl-border-none tr:last-child td {
+  padding-bottom: 0;
 }
 
 /* 모니터링 > VDS 교통수동정보 */
@@ -3369,12 +3457,13 @@ footer .copylight.bg-gray2 {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin-top: 30px;
-  border: 1px solid #181616;
+  border: 1px solid #a7a9ac;
+  border-radius: 5px;
 }
 
 .traffic-manual-info-container-right .tbl-border-none {
   padding: 5px 20px;
-  border-right: 1px solid #181616;
+  border-right: 1px solid #a7a9ac;
 }
 
 .traffic-manual-info-container-right .tbl-border-none th {
@@ -3393,12 +3482,12 @@ footer .copylight.bg-gray2 {
 
 .traffic-manual-info-container-right .btn-inline-group .btn-block {
   border-radius: 5px;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 700;
 }
 
 .traffic-manual-info-container-right .tbl-celled {
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
 .traffic-manual-info-container-right .tbl-celled th {
@@ -3406,27 +3495,55 @@ footer .copylight.bg-gray2 {
 }
 
 /* 모니터링 > VDS 관리 */
-.vds-traffic-admin {
-  gap: 0 30px;
-}
-
 .vds-traffic-admin.ly-main {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding: 47px 50px;
+}
+
+.vds-traffic-admin .vds-lane-set {
+  padding-top: 20px;
+}
+
+.vds-traffic-admin .vds-lane-set .header-bind.type2 {
+  padding-bottom: 36px;
+}
+
+.vds-traffic-admin .vds-lane-set .tbl-border-none td {
+  height: 38px;
+}
+
+.vds-traffic-admin .vds-control h3 {
+  margin-bottom: 39px;
 }
 
 .vds-traffic-admin-container-left {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  padding-right: 50px;
+  border-right: 1px solid #bcc0cc;
+}
+
+.vds-traffic-admin-container-left .data-info-comopnent:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 .vds-traffic-admin-container-right {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  padding-left: 50px;
+}
+
+.vds-traffic-admin-container-right .data-info-comopnent:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 /* 모니터링 > ROI */
